@@ -85,7 +85,7 @@ this starter. These demo posts can be updated or removed, but it may be best to
 use one as a starting point, just for the frontmatter properties.
 
 If you want to use other frontmatter properties in the template (or just modify
-the layout), make changes in `src/routes/blog/[post]/+page.svelte`.
+the layout), make changes in `src/routes/journal/[post]/+page.svelte`.
 
 ⚠️ **Note: posts should have a `date` and an `excerpt` defined in the
 frontmatter.** They're sorted by `date`, and use `excerpt` in page meta tags
@@ -98,7 +98,7 @@ The starter will still work without `date` properties in your posts, but the
 sorting won't be right. Similarly, you can have posts without an `excerpt`, but
 your SEO/social previews will be sub-optimal.
 
-Also: while there's no link to it by default, `/blog/category` exists as an
+Also: while there's no link to it by default, `/journal/category` exists as an
 archive of all your post categories.
 
 ### Pagination
@@ -108,7 +108,7 @@ Pagination automatically kicks in once you have more posts than the
 pagination right away unless you either change `postsPerPage` to a very low
 number, or add several more Markdown files to the `src/lib/posts` folder.
 
-**Note:** both the normal `/blog` feed _and_ the category feeds at
+**Note:** both the normal `/journal` feed _and_ the category feeds at
 `/category/[category]` are automatically paginated.
 
 ### RSS
