@@ -22,6 +22,10 @@ export const collections = [
 		label: 'Work',
 	},
 	{
+		name: 'writing',
+		label: 'Writing',
+	},
+	{
 		name: 'journal',
 		label: 'Journal',
 	},
@@ -32,6 +36,9 @@ export const navItems = [
 	{
 		title: 'Work',
 		route: '/work'
+	}, {
+		title: 'Writing',
+		route: '/writing'
 	}, {
 		title: 'Journal',
 		route: '/journal'

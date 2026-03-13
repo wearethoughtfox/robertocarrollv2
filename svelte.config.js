@@ -16,9 +16,15 @@ const config = {
 			// declare their own entries() functions so SvelteKit knows what to prerender.
 			entries: ["*"],
 			handleHttpError: ({ path, message }) => {
-				// Warn instead of throw for category routes - these will be built in a future phase
-				if (path.includes('/category/')) {
-					console.warn(`Skipping unbuilt route: ${path}`)
+				// During migration, warn instead of throwing for:
+				// - category routes (not yet built)
+				// - missing images/assets (not yet copied from Jekyll)
+				// - broken internal links to posts not yet migrated
+				const isCategory = path.includes('/category/')
+				const isAsset = /\.(jpg|jpeg|png|gif|svg|webp|pdf|mp4|mp3)$/i.test(path)
+				const isMissingPost = /^\/(journal|work|writing)\/[^/]+\/?$/.test(path)
+				if (isCategory || isAsset || isMissingPost) {
+					console.warn(`Skipping during migration: ${path}`)
 					return
 				}
 				throw new Error(message)

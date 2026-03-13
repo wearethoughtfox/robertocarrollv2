@@ -1,56 +1,28 @@
 <script>
+	import DefaultTemplate from '$lib/components/templates/default.svelte'
+	import WorkTemplate from '$lib/components/templates/work.svelte'
+	import WritingTemplate from '$lib/components/templates/writing.svelte'
+
+	// Map collection names to their templates.
+	// Any collection not listed here falls back to DefaultTemplate.
+	const templates = {
+		work: WorkTemplate,
+		writing: WritingTemplate,
+	}
+
 	let { data } = $props()
 
-	const { title, excerpt, date, updated, coverImage, coverWidth, coverHeight, categories } = data.meta
-	const { PostContent, collection } = data
+	const Template = $derived(templates[data.collection] ?? DefaultTemplate)
 </script>
 
 <svelte:head>
-	<title>{title}</title>
-	<meta data-key="description" name="description" content={excerpt} />
+	<title>{data.meta.title}</title>
+	<meta data-key="description" name="description" content={data.meta.excerpt} />
 	<meta property="og:type" content="article" />
-	<meta property="og:title" content={title} />
-	<meta name="twitter:title" content={title} />
-	<meta property="og:description" content={excerpt} />
-	<meta name="twitter:description" content={excerpt} />
-	<meta property="og:image:width" content={coverWidth} />
-	<meta property="og:image:height" content={coverHeight} />
+	<meta property="og:title" content={data.meta.title} />
+	<meta name="twitter:title" content={data.meta.title} />
+	<meta property="og:description" content={data.meta.excerpt} />
+	<meta name="twitter:description" content={data.meta.excerpt} />
 </svelte:head>
 
-<article class="post">
-	{#if coverImage}
-		<img
-			class="cover-image"
-			src={coverImage}
-			alt=""
-			style="aspect-ratio: {coverWidth} / {coverHeight};"
-			width={coverWidth}
-			height={coverHeight}
-		/>
-	{/if}
-
-	<h1>{title}</h1>
-
-	<div class="meta">
-		<b>Published:</b>
-		{date}
-		{#if updated}
-			<br />
-			<b>Updated:</b>
-			{updated}
-		{/if}
-	</div>
-
-	<PostContent />
-
-	{#if categories}
-		<aside class="post-footer">
-			<h2>Posted in:</h2>
-			<ul class="post-footer__categories">
-				{#each categories as category}
-					<li>{category}</li>
-				{/each}
-			</ul>
-		</aside>
-	{/if}
-</article>
+<Template {data} />
