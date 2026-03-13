@@ -1,5 +1,5 @@
 <script>
-	let { posts = [] } = $props();
+	let { posts = [], basePath = '/journal' } = $props();
 </script>
 
 
@@ -7,7 +7,7 @@
 	{#each posts as post}
 		<li>
 			<article>
-				<a href="/journal/{post.slug}">
+				<a href="{basePath}/{post.slug}">
 					<img
 					src={post.coverImage}
 					alt=""

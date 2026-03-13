@@ -1,14 +1,11 @@
 import { postsPerPage } from '$lib/config'
-import fetchPosts from '$lib/assets/js/fetchPosts'
+import fetchCollection from '$lib/assets/js/fetchCollection'
 import { json } from '@sveltejs/kit'
 
 export const prerender = true
 
+// Returns the first page of journal posts (kept for RSS and backwards compatibility)
 export const GET = async () => {
-  const options = {
-    limit: postsPerPage
-  }
-
-  const { posts } = await fetchPosts(options)
-  return json(posts)
+	const { posts } = await fetchCollection('journal', { limit: postsPerPage })
+	return json(posts)
 }

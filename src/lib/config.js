@@ -14,16 +14,32 @@ export const siteAuthor = '- find and change this text in src/lib/config.js'
 // Controls how many posts are shown per page on the main blog index pages
 export const postsPerPage = 10
 
+// Define your collections here - each becomes a /{name}/ route automatically.
+// Adding a new collection: add an entry here + create src/lib/collections/{name}/
+export const collections = [
+	{
+		name: 'work',
+		label: 'Work',
+	},
+	{
+		name: 'journal',
+		label: 'Journal',
+	},
+]
+
 // Edit this to alter the main nav menu. (Also used by the footer and mobile nav.)
 export const navItems = [
 	{
-		title: 'Blog',
+		title: 'Work',
+		route: '/work'
+	}, {
+		title: 'Journal',
 		route: '/journal'
 	}, {
 		title: 'About',
 		route: '/about'
 	}, {
 		title: 'Contact',
-		route: '/contact' 
+		route: '/contact'
 	},
 ]

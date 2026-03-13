@@ -9,7 +9,7 @@
 	 */
 
 	/** @type {Props} */
-	let { currentPage, totalPosts, path = '/journal/page' } = $props();
+	let { currentPage, totalPosts, path = '' } = $props();
 	
 	let pagesAvailable = $derived(Math.ceil(totalPosts / postsPerPage))
 	

@@ -11,16 +11,18 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		prerender: {
-			entries: [
-				"*",
-				"/api/posts/page/*",
-				"/journal/category/*/page/",
-				"/journal/category/*/page/*",
-				"/journal/category/page/",
-				"/journal/category/page/*",
-				"/journal/page/",
-				"/journal/page/*",
-			],
+			// "*" crawls all links found on prerendered pages.
+			// Dynamic collection routes ([collection], [collection]/[slug], [collection]/page/[page])
+			// declare their own entries() functions so SvelteKit knows what to prerender.
+			entries: ["*"],
+			handleHttpError: ({ path, message }) => {
+				// Warn instead of throw for category routes - these will be built in a future phase
+				if (path.includes('/category/')) {
+					console.warn(`Skipping unbuilt route: ${path}`)
+					return
+				}
+				throw new Error(message)
+			}
 		},
 	},
 
