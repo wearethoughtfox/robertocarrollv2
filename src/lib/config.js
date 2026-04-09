@@ -26,6 +26,10 @@ export const collections = [
 		label: 'Writing',
 	},
 	{
+		name: 'journalism',
+		label: 'Journalism',
+	},
+	{
 		name: 'journal',
 		label: 'Journal',
 	},
@@ -34,19 +38,19 @@ export const collections = [
 // Edit this to alter the main nav menu. (Also used by the footer and mobile nav.)
 export const navItems = [
 	{
-		title: 'Work',
-		route: '/work'
-	}, {
 		title: 'Writing',
 		route: '/writing'
 	}, {
-		title: 'Journal',
+		title: 'Blog',
 		route: '/journal'
+	}, {
+		title: 'Journalism',
+		route: '/journalism'
+	}, {
+		title: 'Work',
+		route: '/work'
 	}, {
 		title: 'About',
 		route: '/about'
-	}, {
-		title: 'Contact',
-		route: '/contact'
 	},
 ]
