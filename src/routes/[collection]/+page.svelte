@@ -1,6 +1,5 @@
 <script>
 	import PostsList from '$lib/components/PostsList.svelte'
-	import Pagination from '$lib/components/Pagination.svelte'
 	import { collections, siteDescription } from '$lib/config'
 
 	let { data } = $props()
@@ -15,6 +14,4 @@
 
 <h1>{collectionConfig?.label}</h1>
 
-<PostsList posts={data.posts} basePath="/{data.collection}" />
-
-<Pagination currentPage={1} totalPosts={data.total} path="/{data.collection}/page" />
+<PostsList posts={data.posts} basePath="/{data.collection}" collection={data.collection} />

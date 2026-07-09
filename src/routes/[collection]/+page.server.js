@@ -1,5 +1,5 @@
 import fetchCollection from '$lib/assets/js/fetchCollection'
-import { collections, postsPerPage } from '$lib/config'
+import { collections } from '$lib/config'
 import { error } from '@sveltejs/kit'
 
 // Tell SvelteKit which collection index pages to prerender
@@ -13,7 +13,8 @@ export const load = async ({ params }) => {
 		error(404, `Collection "${collection}" not found`)
 	}
 
-	const { posts, total } = await fetchCollection(collection, { limit: postsPerPage })
+	// No pagination: every post in the collection on one page
+	const { posts, total } = await fetchCollection(collection, { limit: -1 })
 
 	return { posts, total, collection }
 }
