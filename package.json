@@ -11,6 +11,7 @@
 		"tokens": "node scripts/generate-tokens.js"
 	},
 	"devDependencies": {
+		"@fontsource/eb-garamond": "^5.2.7",
 		"@sveltejs/adapter-node": "^5.5.7",
 		"@sveltejs/kit": "^2.5.27",
 		"@sveltejs/vite-plugin-svelte": "^4.0.0",

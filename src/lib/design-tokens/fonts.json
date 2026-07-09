@@ -1,10 +1,10 @@
 {
   "title": "Fonts",
-  "description": "Atkinson Hyperlegible for everything (self-hosted in static/fonts), Fira Code for code.",
+  "description": "EB Garamond for body (trial), Atkinson Hyperlegible for headings/UI, Fira Code for code. All self-hosted in static/fonts.",
   "items": [
     {
       "name": "Base",
-      "value": "'Atkinson Hyperlegible', 'Helvetica Neue', Arial, sans-serif"
+      "value": "'EB Garamond', Georgia, 'Times New Roman', serif"
     },
     {
       "name": "Display",
