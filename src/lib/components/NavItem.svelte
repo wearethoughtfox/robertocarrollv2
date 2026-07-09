@@ -3,7 +3,7 @@
 
 	let { href, children } = $props();
 
-	let isCurrentPage = $derived($currentPage.startsWith(href));
+	let isCurrentPage = $derived(href === '/' ? $currentPage === '/' : $currentPage.startsWith(href));
 </script>
 
 <li>
