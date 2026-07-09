@@ -3,9 +3,12 @@
 
 	const { title, excerpt, date, updated, coverImage, coverWidth, coverHeight, categories } = data.meta
 	const { PostContent } = data
+
+	const formatDate = (d) =>
+		new Date(d).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })
 </script>
 
-<article class="post">
+<article class="post flow">
 	{#if coverImage}
 		<img
 			class="cover-image"
@@ -21,11 +24,11 @@
 
 	<div class="meta">
 		<b>Published:</b>
-		{date}
+		{formatDate(date)}
 		{#if updated}
 			<br />
 			<b>Updated:</b>
-			{updated}
+			{formatDate(updated)}
 		{/if}
 	</div>
 

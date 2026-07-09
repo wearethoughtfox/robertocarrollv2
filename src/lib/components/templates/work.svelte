@@ -7,7 +7,7 @@
 	const year = date ? new Date(date).getFullYear() : null
 </script>
 
-<article class="work-main">
+<article class="work-main flow">
 	<h1>{title}</h1>
 	{#if excerpt}
 		<p class="work-excerpt">{excerpt}</p>

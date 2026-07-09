@@ -1,0 +1,15 @@
+/*
+FLOW
+Adds consistent vertical rhythm between sibling elements.
+https://piccalil.li/quick-tip/flow-utility/
+
+Override --flow-space on an element to change the space above it.
+*/
+
+.flow > * + * {
+	margin-block-start: var(--flow-space, 1em);
+}
+
+.flow > :is(h2, h3, h4) {
+	--flow-space: var(--space-l);
+}

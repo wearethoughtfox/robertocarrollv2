@@ -1,10 +1,11 @@
 <!-- This is the global layout file; it "wraps" every page on the site. (Or more accurately: is the parent component to every page component on the site.) -->
 <script>
+	import '../app.css';
 	import { run } from 'svelte/legacy';
 
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
-	import { currentPage, isMenuOpen } from '../lib/assets/js/store.js';
+	import { currentPage } from '../lib/assets/js/store.js';
 	import { navItems } from '$lib/config';
 	import { preloadCode } from '$app/navigation';
 	import { onMount } from 'svelte';
@@ -37,18 +38,6 @@
 </script>
 
 <svelte:head>
-	<link rel="stylesheet" href="/css/vars.css" />
-	<link rel="stylesheet" href="/css/root.css" />
-	<link rel="stylesheet" href="/css/fonts.css" />
-	<link rel="stylesheet" href="/css/typography.css" />
-	<link rel="stylesheet" href="/css/layout.css" />
-	<link rel="stylesheet" href="/css/components.css" />
-	<link rel="stylesheet" href="/css/header-and-footer.css" />
-	<link rel="stylesheet" href="/css/forms.css" />
-	<link rel="stylesheet" href="/css/animation.css" />
-	<link rel="stylesheet" href="/css/utilities.css" />
-	<link rel="stylesheet" href="/css/code.css" />
-	<link rel="stylesheet" href="/css/prism.css" />
 	<link
 		rel="alternate"
 		type="application/rss+xml"
@@ -61,12 +50,28 @@
 	The below markup is used on every page in the site. The <slot> is where the page's
 	actual contents will show up.
 -->
-<div class="layout" class:open={$isMenuOpen}>
-	<Header />
-	{#key data.path}
-		<main id="main" tabindex="-1" in:fade|global={transitionIn} out:fade|global={transitionOut}>
+<Header />
+{#key data.path}
+	<main id="main" tabindex="-1" in:fade|global={transitionIn} out:fade|global={transitionOut}>
+		<div class="wrapper region flow">
 			{@render children?.()}
-		</main>
-	{/key}
-	<Footer />
-</div>
+		</div>
+	</main>
+{/key}
+<Footer />
+
+<style>
+	:global(body) {
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+	}
+
+	main {
+		flex: 1;
+	}
+
+	main:focus {
+		outline: none;
+	}
+</style>

@@ -3,7 +3,7 @@
 	import NavItem from './NavItem.svelte';
 </script>
 
-<ul>
+<ul class="nav-list" role="list">
 	{#each navItems as page}
 		<NavItem href={page.route}>
 			{page.title}

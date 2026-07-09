@@ -21,11 +21,11 @@
 {#key currentPage}
 	{#if pagesAvailable > 1}
 		<nav aria-label="Pagination navigation" class="pagination">
-			<ul>
+			<ul class="pagination-list" role="list">
 				{#each Array.from({length: pagesAvailable}, (_, i) => i + 1) as page}
 					<li>
 						<a href="{path}/{page}" aria-current="{isCurrentPage(page)}">
-							<span class="sr-only">
+							<span class="visually-hidden">
 								{#if isCurrentPage(page)}
 									Current page: 
 								{:else}
@@ -40,3 +40,33 @@
 		</nav>
 	{/if}
 {/key}
+
+<style>
+	.pagination {
+		margin-block-start: var(--space-l);
+	}
+
+	.pagination-list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--space-s);
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.pagination-list a {
+		display: inline-block;
+		padding: var(--space-xs) var(--space-s);
+		border: var(--stroke-solid);
+		border-radius: var(--radius-s);
+		text-decoration: none;
+		color: var(--color-ink);
+	}
+
+	.pagination-list a[aria-current='true'] {
+		background: var(--color-darker);
+		border-color: var(--color-darker);
+		color: var(--color-paper);
+	}
+</style>

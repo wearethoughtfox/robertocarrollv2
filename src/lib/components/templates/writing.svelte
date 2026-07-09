@@ -7,7 +7,7 @@
 	const year = date ? new Date(date).getFullYear() : null
 </script>
 
-<article class="writing-article">
+<article class="writing-article flow">
 	<h1>{title}</h1>
 	<hr />
 

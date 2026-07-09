@@ -1,0 +1,18 @@
+{
+  "title": "Fonts",
+  "description": "Atkinson Hyperlegible for everything (self-hosted in static/fonts), Fira Code for code.",
+  "items": [
+    {
+      "name": "Base",
+      "value": "'Atkinson Hyperlegible', 'Helvetica Neue', Arial, sans-serif"
+    },
+    {
+      "name": "Display",
+      "value": "'Atkinson Hyperlegible', 'Helvetica Neue', Arial, sans-serif"
+    },
+    {
+      "name": "Mono",
+      "value": "'Fira Code', ui-monospace, 'Cascadia Code', monospace"
+    }
+  ]
+}
