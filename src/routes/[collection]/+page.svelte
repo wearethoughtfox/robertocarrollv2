@@ -12,6 +12,6 @@
 	<meta data-key="description" name="description" content={siteDescription} />
 </svelte:head>
 
-<h1>{collectionConfig?.label}</h1>
+<h1 class="visually-hidden">{collectionConfig?.label}</h1>
 
 <PostsList posts={data.posts} basePath="/{data.collection}" collection={data.collection} />
