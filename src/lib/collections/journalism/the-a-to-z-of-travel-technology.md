@@ -18,7 +18,7 @@ services:
 excerpt: How technology is changing the way we travel in the 21st century
 ---
 
-<img src="images/writing-travel-tech.jpg" width="100%" height="auto" alt="Travel and technology article">
+<img src="/images/writing-travel-tech.jpg" width="100%" height="auto" alt="Travel and technology article">
 
 ## Augmented reality
 This technology essentially involves layering information over a particular screen-based view of the world. A wide variety of iPhone apps use this technique to supplement the view you can see through the lens of your phone's camera with all manner of useful, semi-transparent objects, from directions to restaurant reviews. At the moment, the potential of this technology outweighs stunning examples. The instant translation of Word Lens is one of the most remarkable, though it is only available in English and Spanish.

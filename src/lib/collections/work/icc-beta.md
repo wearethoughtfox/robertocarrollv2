@@ -26,7 +26,7 @@ Following on from the work in the [ICC alpha](/work/icc-alpha/), I led the team 
 - Designing the [content templates](https://robertocarroll.github.io/icc-beta/style-guide/content-templates.html) and [style guide](https://robertocarroll.github.io/icc-beta/style-guide/) to help people in the organisation create content.
 - Developing custom sections such as [maps](/work/icc-map/), [timelines](https://robertocarroll.github.io/icc-beta/timeline/lubanga) and other ideas such as customising content based on location.
 - User testing and regular feedback.
-- Lots more ... such as finding ways to [put the core texts back at the heart of the site](/journal/rome-statute-icc/)
+- Lots more ... such as finding ways to put the core texts back at the heart of the site
 
 Note: A company called [Radley Yeldar](http://ry.com) did a wider branding project that provided additional visual direction for the website. Altogether it was a great collaborative effort between a variety of internal and external teams which took over a year. It was a privilege to have been part of.
 

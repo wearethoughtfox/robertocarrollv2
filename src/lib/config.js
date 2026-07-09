@@ -5,11 +5,11 @@
  * PLEASE BE SURE TO UPDATE THEM ALL! Thank you!
  **/ 
 
-export const siteTitle = 'My Awesome Blog'
-export const siteDescription = 'Built with the SvelteKit Static Blog Starter'
-export const siteURL = 'example.com'
-export const siteLink = 'https://github.com/josh-collinsworth/sveltekit-blog-starter'
-export const siteAuthor = '- find and change this text in src/lib/config.js'
+export const siteTitle = 'Rob Carroll'
+export const siteDescription = 'Rob Carroll is a writer who also makes websites. Journalism, web work, and a journal.'
+export const siteURL = 'robertocarroll.com'
+export const siteLink = 'https://robertocarroll.com'
+export const siteAuthor = 'Rob Carroll'
 
 // Controls how many posts are shown per page on the main blog index pages
 export const postsPerPage = 10
@@ -20,10 +20,6 @@ export const collections = [
 	{
 		name: 'work',
 		label: 'Work',
-	},
-	{
-		name: 'writing',
-		label: 'Writing',
 	},
 	{
 		name: 'journalism',
@@ -38,9 +34,6 @@ export const collections = [
 // Edit this to alter the main nav menu. (Also used by the footer and mobile nav.)
 export const navItems = [
 	{
-		title: 'Writing',
-		route: '/writing'
-	}, {
 		title: 'Blog',
 		route: '/journal'
 	}, {

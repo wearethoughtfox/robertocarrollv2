@@ -16,7 +16,7 @@ excerpt: On the medieval theory of the movement of empire
 
 I wrote an article about *translatio imperii*, a medieval theory of the movement of empire, for Profile magazine.
 
-<img src="images/writing-profile.jpg" width="100%" height="auto" alt="Profile">
+<img src="/images/writing-profile.jpg" width="100%" height="auto" alt="Profile">
 
 <span class="firstcharacter">W</span>here do you think of when you think of the West? 'Hardly one of life's imponderables, I know. But chances are, you plumped for the United States. Unless of course you are myopic, parochial, border-bound to the shores and cliffs of our tiny island. In which case, you probably picked Slough. Admit it. When it comes to the West, America's pretty much bagged the worldwide rights, notched up the copyright, trademarked the name. "Go West, young man, go West". There's the Wild West, the Western, Mae West.
 

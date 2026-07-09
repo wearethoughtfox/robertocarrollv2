@@ -30,6 +30,6 @@ Kindle would not sit alongside iPhones and Blackberries in Harris's tirade. The 
 
 Next to the iPhone, the Kindle looks quaint and almost anachronistic:
 
-[![Kindle and iPhone side by side](images/journal-kindle.jpg)](http://www.flickr.com/photos/robertocarroll/6713767237/)
+[![Kindle and iPhone side by side](/images/journal-kindle.jpg)](http://www.flickr.com/photos/robertocarroll/6713767237/)
 
 The Kindle's strength, it seems, is its modesty and humility. Like all good tools, it recedes into the background when you don't need it. That's why the Kindle is a brilliant device which, by looking like something from the past, might have shown the way for devices in the future.
