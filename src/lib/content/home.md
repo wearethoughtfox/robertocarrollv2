@@ -1,44 +1,19 @@
 ## I'm a writer who also makes websites
 
-Writing a novel (second draft)  
-Guardian short story competition winner  
+I'm writing my first novel — currently on the second draft, the one where you find out what the book is actually about. My short fiction won the Guardian short story competition, and I once wrote a parenting column, so no genre is safe.
 
-Father to three children, including a World Para swimming medalist  
+[Follow along in the journal →](/journal)
 
-Built the website for the International Criminal Court  
+I've written journalism for The Guardian, The National, The Wire, Time Out and others, on subjects as diverse as mirror neurons, Martin Parr, Syrian monasteries and silent disco.
 
-Played guitar in a few bands  
-Wrote a parenting column  
+[Read my journalism →](/journalism)
 
-Circumnavigated Australia  
+The websites part is real too. I run a small design and development studio called We Are Thought Fox, and I led the team that rebuilt the website for the International Criminal Court.
 
-Studied jazz and American literature at Cambridge  
+[See my work →](/work)
 
-Built a campervan  
+The longer story — Yorkshire to the Peak District via Australia, Abu Dhabi and the Netherlands, taking in a campervan, a club night in East London and a lifetime of surfing (holding steady) — is on the About page.
 
-Helped launch a national newspaper in Abu Dhabi  
+[More about me →](/about)
 
-Ran a club night in East London  
-
-Written about music in Yemen and Syria  
-
-Started an e-learning company in 2001  
-
-Making websites with We Are Thought Fox  
-
-Lifelong surfer (holding steady)
-
-
-Yorkshire-born. Now in the Peak District, via Australia, the UAE, and the Netherlands.
-
-
-I’ve written journalism for The Guardian, Time Out, The National and others.  
-Pieces on everything from mirror neurons to Syrian monasteries.  
-
-[Journalism →](/journalism)
-
-
-I design and build things for the web.  
-I run a small studio called We Are Thought Fox.  
-
-[Work →](/work)
+I have some availability for web projects, and I always like hearing from readers and editors. [Get in touch](mailto:rob@wearethoughtfox.com).
