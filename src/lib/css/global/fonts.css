@@ -33,36 +33,32 @@
 }
 
 @font-face {
-	font-family: 'EB Garamond';
-	src: url('/fonts/eb-garamond-latin-400-normal.woff2') format('woff2');
-	size-adjust: 112%;
+	font-family: 'Alegreya';
+	src: url('/fonts/alegreya-latin-400-normal.woff2') format('woff2');
 	font-display: swap;
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'EB Garamond';
-	src: url('/fonts/eb-garamond-latin-400-italic.woff2') format('woff2');
-	size-adjust: 112%;
+	font-family: 'Alegreya';
+	src: url('/fonts/alegreya-latin-400-italic.woff2') format('woff2');
 	font-display: swap;
 	font-weight: normal;
 	font-style: italic;
 }
 
 @font-face {
-	font-family: 'EB Garamond';
-	src: url('/fonts/eb-garamond-latin-700-normal.woff2') format('woff2');
-	size-adjust: 112%;
+	font-family: 'Alegreya';
+	src: url('/fonts/alegreya-latin-700-normal.woff2') format('woff2');
 	font-display: swap;
 	font-weight: bold;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'EB Garamond';
-	src: url('/fonts/eb-garamond-latin-700-italic.woff2') format('woff2');
-	size-adjust: 112%;
+	font-family: 'Alegreya';
+	src: url('/fonts/alegreya-latin-700-italic.woff2') format('woff2');
 	font-display: swap;
 	font-weight: bold;
 	font-style: italic;

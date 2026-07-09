@@ -53,8 +53,10 @@
 <Header />
 {#key data.path}
 	<main id="main" tabindex="-1" in:fade|global={transitionIn} out:fade|global={transitionOut}>
-		<div class="wrapper region flow">
-			{@render children?.()}
+		<div class="wrapper region">
+			<div class="center flow page-column">
+				{@render children?.()}
+			</div>
 		</div>
 	</main>
 {/key}
@@ -69,6 +71,10 @@
 
 	main {
 		flex: 1;
+	}
+
+	.page-column {
+		--center-max-width: 58ch;
 	}
 
 	main:focus {

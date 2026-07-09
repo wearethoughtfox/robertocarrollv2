@@ -1,10 +1,10 @@
 {
   "title": "Fonts",
-  "description": "EB Garamond for body (trial), Atkinson Hyperlegible for headings/UI, Fira Code for code. All self-hosted in static/fonts.",
+  "description": "Alegreya for body, Atkinson Hyperlegible for headings/UI, Fira Code for code. All self-hosted in static/fonts.",
   "items": [
     {
       "name": "Base",
-      "value": "'EB Garamond', Georgia, 'Times New Roman', serif"
+      "value": "'Alegreya', Georgia, 'Times New Roman', serif"
     },
     {
       "name": "Display",
