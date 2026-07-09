@@ -10,7 +10,8 @@
 		</nav>
 
 		<p class="site-foot__meta">
-			<a href="/api/rss.xml" data-sveltekit-reload>RSS</a>
+			<a href="/">Home</a>
+			&nbsp;·&nbsp; <a href="/api/rss.xml" data-sveltekit-reload>RSS</a>
 			&nbsp;·&nbsp; &copy;{new Date().getFullYear()} {siteAuthor}
 		</p>
 	</div>

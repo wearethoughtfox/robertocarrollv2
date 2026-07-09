@@ -1,6 +1,5 @@
 <script>
 	import NavItems from './NavItems.svelte'
-	import { siteTitle } from '$lib/config'
 </script>
 
 <a class="skip-link visually-hidden visually-hidden--focusable" href="#main">
@@ -9,14 +8,9 @@
 
 <header class="site-head">
 	<div class="wrapper">
-		<div class="repel">
-			<a href="/" class="site-head__title">
-				{siteTitle}
-			</a>
-			<nav aria-label="Main">
-				<NavItems />
-			</nav>
-		</div>
+		<nav aria-label="Main">
+			<NavItems />
+		</nav>
 	</div>
 </header>
 
@@ -39,16 +33,10 @@
 		border-block-end: var(--stroke);
 	}
 
-	.site-head__title {
-		font-weight: var(--font-bold);
-		font-size: var(--size-step-1);
-		text-decoration: none;
-		color: var(--color-darker);
-	}
-
 	nav :global(ul) {
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: center;
 		gap: var(--space-s) var(--space-m);
 		list-style: none;
 		margin: 0;
