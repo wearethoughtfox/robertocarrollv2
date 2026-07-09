@@ -9,4 +9,6 @@
 	<meta name="description" content={siteDescription} />
 </svelte:head>
 
-<data.ReadMe />
+<div class="center flow">
+	<data.ReadMe />
+</div>
