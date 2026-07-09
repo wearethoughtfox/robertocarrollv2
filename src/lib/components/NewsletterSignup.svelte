@@ -20,10 +20,17 @@
 		<button type="submit">Sign up</button>
 	</form>
 {:else}
-	<p>
-		<a href="mailto:rob@wearethoughtfox.com?subject=Newsletter">Email me</a> and I’ll add you to
-		the list from the first issue.
-	</p>
+	<form class="newsletter-signup" aria-label="Newsletter signup">
+		<label class="sr-only" for="newsletter-email-fallback">Email address</label>
+		<input
+			type="email"
+			name="email"
+			id="newsletter-email-fallback"
+			placeholder="Enter your email"
+			required
+		/>
+		<button type="submit">Subscribe</button>
+	</form>
 {/if}
 
 <style>
@@ -36,6 +43,10 @@
 
 	.newsletter-signup input[type='email'] {
 		flex: 1 1 14rem;
+	}
+
+	.newsletter-signup button {
+		flex: 0 0 auto;
 	}
 
 	.sr-only {

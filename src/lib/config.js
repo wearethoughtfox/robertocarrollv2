@@ -41,6 +41,12 @@ export const navItems = [
 		title: 'Home',
 		route: '/'
 	}, {
+		title: 'Now',
+		route: '/now'
+	}, {
+		title: 'Writing',
+		route: '/writing'
+	}, {
 		title: 'Blog',
 		route: '/journal'
 	}, {
