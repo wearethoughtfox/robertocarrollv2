@@ -11,6 +11,10 @@ export const siteURL = 'robertocarroll.com'
 export const siteLink = 'https://robertocarroll.com'
 export const siteAuthor = 'Rob Carroll'
 
+// Buttondown username for the newsletter signup form on the homepage.
+// Leave empty to show a mailto fallback instead of the form.
+export const newsletterUsername = ''
+
 // Controls how many posts are shown per page on the main blog index pages
 export const postsPerPage = 10
 

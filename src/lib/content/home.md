@@ -1,19 +1,19 @@
+<script>
+	import NewsletterSignup from '$lib/components/NewsletterSignup.svelte'
+</script>
+
 ## I'm a writer who also makes websites
 
-I'm writing my first novel — currently on the second draft, the one where you find out what the book is actually about. My short fiction won the Guardian short story competition, and I once wrote a parenting column, so no genre is safe.
+I'm writing my first novel — currently on the second draft, the one where you find out what the book is actually about. My short fiction won the Guardian short story competition, and I've written journalism for The Guardian, The National, The Wire and Time Out, on subjects as diverse as mirror neurons, Martin Parr, Syrian monasteries and silent disco. I am also …
 
-[Follow along in the journal →](/journal)
+- founder of [We Are Thought Fox](https://wearethoughtfox.com), a small web design and development studio
+- the person who led the rebuild of the [International Criminal Court's website](/work/icc-beta)
+- part of the team that launched a national newspaper in Abu Dhabi
 
-I've written journalism for The Guardian, The National, The Wire, Time Out and others, on subjects as diverse as mirror neurons, Martin Parr, Syrian monasteries and silent disco.
+My newsletter goes out roughly once a month. It follows the novel through its drafts, along with what I'm reading and making, and I try to write it like a note to a friend:
 
-[Read my journalism →](/journalism)
+<NewsletterSignup />
 
-The websites part is real too. I run a small design and development studio called We Are Thought Fox, and I led the team that rebuilt the website for the International Criminal Court.
-
-[See my work →](/work)
-
-The longer story — Yorkshire to the Peak District via Australia, Abu Dhabi and the Netherlands, taking in a campervan, a club night in East London and a lifetime of surfing (holding steady) — is on the About page.
-
-[More about me →](/about)
+My [blog](/journal) covers the topics too nerdy for the newsletter — code snippets, maps, and other web things. My [journalism](/journalism) and [web work](/work) have pages of their own, and the longer story is on the [About page](/about).
 
 I have some availability for web projects, and I always like hearing from readers and editors. [Get in touch](mailto:rob@wearethoughtfox.com).
