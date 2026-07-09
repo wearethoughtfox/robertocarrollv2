@@ -3,7 +3,13 @@
 
 	let { href, children } = $props();
 
-	let isCurrentPage = $derived(href === '/' ? $currentPage === '/' : $currentPage.startsWith(href));
+	// Match the whole path segment: /journal matches /journal and /journal/foo,
+	// but not /journalism (which merely starts with the same characters)
+	let isCurrentPage = $derived(
+		href === '/'
+			? $currentPage === '/'
+			: $currentPage === href || $currentPage.startsWith(href + '/')
+	);
 </script>
 
 <li>
