@@ -1,5 +1,5 @@
 import { sveltekit } from "@sveltejs/kit/vite";
-import { generateTokens } from "./scripts/generate-tokens.js";
+import { generateTokens } from "@thoughtfox/toolkit/scripts/generate-tokens.js";
 import { execSync } from "node:child_process";
 import { statSync } from "node:fs";
 
@@ -27,7 +27,7 @@ const config = {
 		sveltekit(),
 		{
 			name: "tokens",
-			buildStart: generateTokens,
+			buildStart: () => generateTokens(),
 		},
 	],
 	define: {

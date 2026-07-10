@@ -1,26 +1,26 @@
 /* === GLOBAL === */
-@import '$lib/css/global/reset.css';
+@import '@thoughtfox/toolkit/css/reset.css';
 @import '$lib/css/global/fonts.css';
 @import '$lib/css/global/variables.css';
 @import '$lib/css/global/global-styles.css';
 @import '$lib/css/global/code.css';
 @import '$lib/css/global/prism.css';
 
-/* === COMPOSITIONS === */
-@import '$lib/css/compositions/stack.css';
-@import '$lib/css/compositions/cluster.css';
-@import '$lib/css/compositions/sidebar.css';
-@import '$lib/css/compositions/grid.css';
-@import '$lib/css/compositions/switcher.css';
-@import '$lib/css/compositions/cover.css';
-@import '$lib/css/compositions/center.css';
-@import '$lib/css/compositions/reel.css';
-@import '$lib/css/compositions/frame.css';
-@import '$lib/css/compositions/wrapper.css';
-@import '$lib/css/compositions/repel.css';
+/* === COMPOSITIONS (from @thoughtfox/toolkit) === */
+@import '@thoughtfox/toolkit/css/compositions/stack.css';
+@import '@thoughtfox/toolkit/css/compositions/cluster.css';
+@import '@thoughtfox/toolkit/css/compositions/sidebar.css';
+@import '@thoughtfox/toolkit/css/compositions/grid.css';
+@import '@thoughtfox/toolkit/css/compositions/switcher.css';
+@import '@thoughtfox/toolkit/css/compositions/cover.css';
+@import '@thoughtfox/toolkit/css/compositions/center.css';
+@import '@thoughtfox/toolkit/css/compositions/reel.css';
+@import '@thoughtfox/toolkit/css/compositions/frame.css';
+@import '@thoughtfox/toolkit/css/compositions/wrapper.css';
+@import '@thoughtfox/toolkit/css/compositions/repel.css';
 
-/* === UTILITIES === */
-@import '$lib/css/utilities/region.css';
-@import '$lib/css/utilities/visually-hidden.css';
-@import '$lib/css/utilities/text.css';
+/* === UTILITIES (from @thoughtfox/toolkit) === */
+@import '@thoughtfox/toolkit/css/utilities/region.css';
+@import '@thoughtfox/toolkit/css/utilities/visually-hidden.css';
+@import '@thoughtfox/toolkit/css/utilities/text.css';
 @import '$lib/css/utilities/flow.css';

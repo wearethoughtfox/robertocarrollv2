@@ -8,13 +8,14 @@
 		"lint": "prettier --ignore-path .gitignore --check -- plugin-search-dir=. . && eslint --ignore-path .gitignore .",
 		"format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. .",
 		"start": "node build/index.js",
-		"tokens": "node scripts/generate-tokens.js"
+		"tokens": "node node_modules/@thoughtfox/toolkit/scripts/generate-tokens.js"
 	},
 	"devDependencies": {
 		"@fontsource/alegreya": "^5.2.8",
 		"@sveltejs/adapter-node": "^5.5.7",
 		"@sveltejs/kit": "^2.5.27",
 		"@sveltejs/vite-plugin-svelte": "^4.0.0",
+		"@thoughtfox/toolkit": "github:wearethoughtfox/toolkit#v0.1.0",
 		"cssnano": "^8.0.2",
 		"eslint": "^8.56.0",
 		"eslint-config-prettier": "^9.1.0",
