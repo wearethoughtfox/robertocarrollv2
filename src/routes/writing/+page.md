@@ -1,6 +1,7 @@
 <svelte:head>
-	<title>Writing</title>
-	<meta
+
+<title>Writing</title>
+<meta
 		name="description"
 		content="Fiction, journalism and current writing projects by Rob Carroll."
 	/>

@@ -1,15 +1,15 @@
 {
-  "title": "Colors",
-  "description": "robertocarroll.com palette, carried over from the previous theme. Paper/Ink are the working pair; Accent for highlights; Darker for headings and links.",
-  "items": [
-    { "name": "Paper", "value": "#FAF9F8" },
-    { "name": "Ink", "value": "#2F3948" },
-    { "name": "Accent", "value": "#E63946" },
-    { "name": "Light Accent", "value": "#A8DAE5" },
-    { "name": "Lighter Accent", "value": "#E6E8E4" },
-    { "name": "Dark", "value": "#457B9D" },
-    { "name": "Darker", "value": "#1D3557" },
-    { "name": "Black", "value": "#152030" },
-    { "name": "White", "value": "#FFFFFF" }
-  ]
+	"title": "Colors",
+	"description": "robertocarroll.com palette, carried over from the previous theme. Paper/Ink are the working pair; Accent for highlights; Darker for headings and links.",
+	"items": [
+		{ "name": "Paper", "value": "#FAF9F8" },
+		{ "name": "Ink", "value": "#2F3948" },
+		{ "name": "Accent", "value": "#E63946" },
+		{ "name": "Light Accent", "value": "#A8DAE5" },
+		{ "name": "Lighter Accent", "value": "#E6E8E4" },
+		{ "name": "Dark", "value": "#457B9D" },
+		{ "name": "Darker", "value": "#1D3557" },
+		{ "name": "Black", "value": "#152030" },
+		{ "name": "White", "value": "#FFFFFF" }
+	]
 }

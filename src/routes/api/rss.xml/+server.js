@@ -1,20 +1,20 @@
 // IMPORTANT: update all these property values in src/lib/config.js
-import { siteTitle, siteDescription, siteURL, siteLink } from '$lib/config'
-import fetchCollection from '$lib/assets/js/fetchCollection'
+import { siteTitle, siteDescription, siteURL, siteLink } from '$lib/config';
+import fetchCollection from '$lib/assets/js/fetchCollection';
 
-export const prerender = true
+export const prerender = true;
 
 // RSS feed for the journal collection
 export const GET = async () => {
-	const { posts } = await fetchCollection('journal', { limit: -1 })
+	const { posts } = await fetchCollection('journal', { limit: -1 });
 
-	const body = render(posts)
+	const body = render(posts);
 	const headers = {
 		'Cache-Control': `max-age=0, s-max-age=${600}`,
-		'Content-Type': 'application/xml',
-	}
-	return new Response(body, { status: 200, headers })
-}
+		'Content-Type': 'application/xml'
+	};
+	return new Response(body, { status: 200, headers });
+};
 
 const render = (posts) => `<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
@@ -36,4 +36,4 @@ ${posts
 	.join('')}
 </channel>
 </rss>
-`
+`;

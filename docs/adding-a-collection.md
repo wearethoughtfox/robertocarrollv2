@@ -12,24 +12,24 @@ Open `src/lib/config.js` and add an entry to `collections`:
 
 ```js
 export const collections = [
-  { name: 'work',    label: 'Work'    },
-  { name: 'writing', label: 'Writing' },
-  { name: 'journal', label: 'Journal' },
-  { name: 'photos',  label: 'Photos'  }, // ← new
-]
+	{ name: 'work', label: 'Work' },
+	{ name: 'writing', label: 'Writing' },
+	{ name: 'journal', label: 'Journal' },
+	{ name: 'photos', label: 'Photos' } // ← new
+];
 ```
 
 If you want it in the nav, also add it to `navItems` in the same file:
 
 ```js
 export const navItems = [
-  { title: 'Work',    route: '/work'    },
-  { title: 'Writing', route: '/writing' },
-  { title: 'Journal', route: '/journal' },
-  { title: 'Photos',  route: '/photos'  }, // ← new
-  { title: 'About',   route: '/about'   },
-  { title: 'Contact', route: '/contact' },
-]
+	{ title: 'Work', route: '/work' },
+	{ title: 'Writing', route: '/writing' },
+	{ title: 'Journal', route: '/journal' },
+	{ title: 'Photos', route: '/photos' }, // ← new
+	{ title: 'About', route: '/about' },
+	{ title: 'Contact', route: '/contact' }
+];
 ```
 
 ---
@@ -71,6 +71,7 @@ src/lib/components/templates/photos.svelte
 ```
 
 The template receives a `data` prop containing:
+
 - `data.meta` — all frontmatter fields (title, date, excerpt, and anything custom you add)
 - `data.PostContent` — the rendered markdown body as a Svelte component
 - `data.collection` — the collection name string

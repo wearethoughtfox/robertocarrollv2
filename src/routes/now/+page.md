@@ -1,6 +1,7 @@
 <svelte:head>
-	<title>Now</title>
-	<meta
+
+<title>Now</title>
+<meta
 		name="description"
 		content="What Rob Carroll is working on, reading and thinking about now."
 	/>

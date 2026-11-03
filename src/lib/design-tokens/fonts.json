@@ -1,18 +1,18 @@
 {
-  "title": "Fonts",
-  "description": "Alegreya for body, Atkinson Hyperlegible for headings/UI, Fira Code for code. All self-hosted in static/fonts.",
-  "items": [
-    {
-      "name": "Base",
-      "value": "'Alegreya', Georgia, 'Times New Roman', serif"
-    },
-    {
-      "name": "Display",
-      "value": "'Atkinson Hyperlegible', 'Helvetica Neue', Arial, sans-serif"
-    },
-    {
-      "name": "Mono",
-      "value": "'Fira Code', ui-monospace, 'Cascadia Code', monospace"
-    }
-  ]
+	"title": "Fonts",
+	"description": "Alegreya for body, Atkinson Hyperlegible for headings/UI, Fira Code for code. All self-hosted in static/fonts.",
+	"items": [
+		{
+			"name": "Base",
+			"value": "'Alegreya', Georgia, 'Times New Roman', serif"
+		},
+		{
+			"name": "Display",
+			"value": "'Atkinson Hyperlegible', 'Helvetica Neue', Arial, sans-serif"
+		},
+		{
+			"name": "Mono",
+			"value": "'Fira Code', ui-monospace, 'Cascadia Code', monospace"
+		}
+	]
 }

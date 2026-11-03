@@ -1,7 +1,7 @@
-import { sveltekit } from "@sveltejs/kit/vite";
-import { generateTokens } from "@thoughtfox/toolkit/scripts/generate-tokens.js";
-import { execSync } from "node:child_process";
-import { statSync } from "node:fs";
+import { sveltekit } from '@sveltejs/kit/vite';
+import { generateTokens } from '@thoughtfox/toolkit/scripts/generate-tokens.js';
+import { execSync } from 'node:child_process';
+import { statSync } from 'node:fs';
 
 /**
  * When was this content file last actually changed?
@@ -26,18 +26,18 @@ const config = {
 	plugins: [
 		sveltekit(),
 		{
-			name: "tokens",
-			buildStart: () => generateTokens(),
-		},
+			name: 'tokens',
+			buildStart: () => generateTokens()
+		}
 	],
 	define: {
-		__HOME_UPDATED__: JSON.stringify(lastUpdated("src/lib/content/home.md")),
+		__HOME_UPDATED__: JSON.stringify(lastUpdated('src/lib/content/home.md'))
 	},
 	server: {
 		fs: {
-			allow: ["."],
-		},
-	},
+			allow: ['.']
+		}
+	}
 };
 
 export default config;
